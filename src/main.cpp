@@ -3,17 +3,17 @@
 #include <Stepper.h>
 
 // IR Sensor Pin
-const int RECV_PIN = 2;
+const int RECV_PIN = 8;
 
 // Schrittmotor-Parameter
 const int STEPS_PER_REV = 2048; // Schritte pro Umdrehung
 const int MOTOR_SPEED = 10;      // Geschwindigkeit in U/min
 
 // Pins für den ULN2003 Treiber
-const int IN1 = 3;
-const int IN2 = 4;
-const int IN3 = 5;
-const int IN4 = 6;
+const int IN1 = 9;
+const int IN2 = 10;
+const int IN3 = 11;
+const int IN4 = 12;
 
 // Stepper-Objekt erstellen
 Stepper stepper(STEPS_PER_REV, IN1, IN3, IN2, IN4);
