@@ -51,37 +51,19 @@ Follow the instructions on the LCD screen and test your reaction time!
 
 ## Circuit Diagram
 
-The circuit diagram shows the wiring of an Arduino Uno with essential components for the reaction game. The setup includes:
+The circuit diagram shows the wiring of an Arduino Uno with essential components for the reaction game. 
 
-1. LED (for visual feedback) connected to a resistor to limit current.
-2. Buzzer (for sound cues).
-3. Two push buttons (one for starting/resetting, the other for measuring reaction time).
-4. LCD Display (to show reaction time and results).
-5. Components are properly connected to digital pins and powered via the Arduino.
-   
 <img src="assets/images/Circuit_Diagram.png" alt="Circuit Diagram" style="width:580px;"/>
 
 ## Flow Chart
 
 The flowchart outlines the reaction game process:
 
-1. The game starts and waits for a random delay.
-2. A signal (LED/Buzzer) indicates the start.
-3. The timer starts counting.
-5. The player must press the button as quickly as possible.
-6. The reaction time is displayed on the LCD.
-7. If a new high score is achieved, it is updated and shown.
-
 <img src="assets/images/Flowchart.png" alt="Flow Chart" style="width:580px;"/>
 
 ## Project picture
 
 The real-life breadboard setup corresponds to the circuit diagram. It includes:
-
-1. A red LED with a resistor, used for indicating when to press the button.
-2. A buzzer, giving an audio cue when the game starts.
-3. A yellow push button, which the player presses to stop the timer.
-4. All components are mounted on a breadboard and connected via jumper wires.
 
 <img src="assets/images/Project_Picture.jpg" alt="Project Picture" style="width:380px;"/>
 
