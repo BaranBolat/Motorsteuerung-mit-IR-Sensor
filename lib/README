@@ -72,7 +72,7 @@ The flowchart outlines the reaction game process:
 6. The reaction time is displayed on the LCD.
 7. If a new high score is achieved, it is updated and shown.
 
-<img src="assets/images/Reactiontime_Flowchart.png" alt="Flow Chart" style="width:580px;"/>
+<img src="assets/images/Flowchart.png" alt="Flow Chart" style="width:580px;"/>
 
 ## Project picture
 
