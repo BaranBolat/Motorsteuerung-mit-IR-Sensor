@@ -1,46 +1,94 @@
+# Motorsteuerung mit IR-Sensor
 
-This directory is intended for project specific (private) libraries.
-PlatformIO will compile them to static libraries and link into the executable file.
+## Description
 
-The source code of each library should be placed in a separate directory
-("lib/your_library_name/[Code]").
+This project demonstrates how to control a 28BYJ-48 4-Phase Stepper Motor using an IR sensor and a remote control. The system allows for remote operation of the motor, making it useful for applications such as automation and robotics.
 
-For example, see the structure of the following example libraries `Foo` and `Bar`:
+*What did I learn?*
 
-|--lib
-|  |
-|  |--Bar
-|  |  |--docs
-|  |  |--examples
-|  |  |--src
-|  |     |- Bar.c
-|  |     |- Bar.h
-|  |  |- library.json (optional. for custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
-|  |
-|  |--Foo
-|  |  |- Foo.c
-|  |  |- Foo.h
-|  |
-|  |- README --> THIS FILE
-|
-|- platformio.ini
-|--src
-   |- main.c
+- Programming an Arduino with an IR-Sensor and IR-Remote
+- Controlling a stepper motor with an ULN2003 driver board
 
-Example contents of `src/main.c` using Foo and Bar:
-```
-#include <Foo.h>
-#include <Bar.h>
+## Table of Contents
 
-int main (void)
-{
-  ...
-}
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Circuit Diagram](#circuit-diagram)
+  - [Flow Chart](#flow-chart)
+  - [Project picture](#project-picture)
+  - [Bill of materials](#bill-of-materials)
 
-```
+## Installation
 
-The PlatformIO Library Dependency Finder will find automatically dependent
-libraries by scanning project source files.
+1. Download and Install Arduino IDE
 
-More information about PlatformIO Library Dependency Finder
-- https://docs.platformio.org/page/librarymanager/ldf.html
+2. Download the Arduino IDE from the official website: https://www.arduino.cc/en/software
+Install the software on your computer.
+Install Arduino Drivers (if needed)
+
+3. Connect the Arduino to your PC via USB.
+If the board is not recognized, install the necessary drivers (e.g., for CH340 or ATmega).
+Add Required Libraries
+
+4. Open the Arduino IDE and go to Sketch → Include Library → Manage Libraries.
+Install the following libraries (if required):
+LiquidCrystal (for the LCD display).
+Assemble the Circuit
+
+5. Connect the LED, buzzer, LCD display, and buttons to the Arduino according to the circuit diagram.
+Ensure correct wiring of all components.
+Upload the Code
+
+6. Open the source code in the Arduino IDE.
+Select the correct board under Tools → Board.
+Select the correct COM port under Tools → Port.
+Click Upload to transfer the code to the Arduino.
+Test the Game
+
+After uploading, the reaction game starts automatically.
+Follow the instructions on the LCD screen and test your reaction time!
+
+## Circuit Diagram
+
+The circuit diagram shows the wiring of an Arduino Uno with essential components for the reaction game. The setup includes:
+
+1. LED (for visual feedback) connected to a resistor to limit current.
+2. Buzzer (for sound cues).
+3. Two push buttons (one for starting/resetting, the other for measuring reaction time).
+4. LCD Display (to show reaction time and results).
+5. Components are properly connected to digital pins and powered via the Arduino.
+   
+<img src="assets/images/Circuit_Diagram.png" alt="Circuit Diagram" style="width:580px;"/>
+
+## Flow Chart
+
+The flowchart outlines the reaction game process:
+
+1. The game starts and waits for a random delay.
+2. A signal (LED/Buzzer) indicates the start.
+3. The timer starts counting.
+5. The player must press the button as quickly as possible.
+6. The reaction time is displayed on the LCD.
+7. If a new high score is achieved, it is updated and shown.
+
+<img src="assets/images/Reactiontime_Flowchart.png" alt="Flow Chart" style="width:580px;"/>
+
+## Project picture
+
+The real-life breadboard setup corresponds to the circuit diagram. It includes:
+
+1. A red LED with a resistor, used for indicating when to press the button.
+2. A buzzer, giving an audio cue when the game starts.
+3. A yellow push button, which the player presses to stop the timer.
+4. All components are mounted on a breadboard and connected via jumper wires.
+
+<img src="assets/images/Project_Picture.jpg" alt="Project Picture" style="width:380px;"/>
+
+## Bill of materials
+
+- IR-Sensor
+- IR-Remote
+- ULN2003
+- stepper motor 28byj-48 
+- Arduino Uno
