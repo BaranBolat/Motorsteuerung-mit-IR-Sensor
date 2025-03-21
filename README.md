@@ -65,7 +65,7 @@ The flowchart outlines the reaction game process:
 
 The real-life breadboard setup corresponds to the circuit diagram. It includes:
 
-<img src="assets/images/Project_Picture.jpg" alt="Project Picture" style="width:380px;"/>
+<img src="assets/images/Project_Picture.png" alt="Project Picture" style="width:380px;"/>
 
 ## Bill of materials
 
